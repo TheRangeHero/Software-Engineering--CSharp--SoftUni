@@ -1,0 +1,45 @@
+Before starting to solve the tasks, carefully examine the written scripts (components) in the "Assets/Scripts" folder.
+Follow the scenes to which gameObjects are attached, what are the public fields shown in the Inspector window,
+and how the components "communicate" with each other.
+Find the video file "Assets/SolvedExample.mkv" and see the final result.
+This will help you understand and implement all the tasks more easily.
+When submitting your project with the solved tasks, remove the video "Assets/SolvedExample.mkv" from the "Assets" folder.
+Archive only the "Assets" folder using "7Zip" or "WinRar" and upload it to the SoftUni exam submission system.
+Good luck!
+
+01. (10 points) When the Start button is pressed, the next scene "Assets/Scenes/MainScene.unity" should be loaded.
+- Open the scene "Assets/Scenes/StartMenu.unity".
+- Find the "Start" button in the hierarchy.
+- When the EXIT GAME button is pressed, it should print "Exit Game" to the console.
+
+02. (20 points) Implement functionality to move the car (Player object) left and right on the street when the "Left Arrow" and "Right Arrow" keys are pressed on the keyboard.
+- Open the scene "Assets/Scenes/MainScene.unity". In the hierarchy, find the object named "Player". Open the "PlayerMovement" component.
+- When the "Left Arrow" button on the keyboard is pressed, move the car (Player object) to the left on the street until its X position reaches the "minX" limit.
+- When the "Right Arrow" button on the keyboard is pressed, move the car (Player object) to the right until its X position reaches the "maxX" limit.
+- Use the "minX" and "maxX" fields in the script to limit the left and right movement of the Player object.
+
+03. (10 points) Implement functionality to activate the Crash Particle Effect once when the Player dies.
+- Find it in the project at location "Assets/ParticleEffects/Crash/CFXR Explosion 1.prefab".
+- Attach this prefab to the car (Player object).
+- Use the "Effects" component to implement this functionality. Use the ParticleSystem field named "crashEffect".
+- Fix the issues with all the gameObjects in this prefab that have a repeatedly looping Particle System. They should only play once.
+- (Bonus 5 points) For "detaching" the "Player" and "Effects" components, use the UnityEvent type. When the Player dies, it should call a method in the Effects component to activate the particle system only once.
+ 
+04. (10 points) Implement functionality to activate the Crash Audio Effect once when the Player dies.
+- Put the new logic in the "Effects" component.
+- Use the AudioEffectSource field of type AudioSource.
+- Use the crashClip field of type AudioClip. The sound is attached to the component's script.
+- The check for Player death is implemented in the "Player" component. Find it there.
+- (Bonus 5 points) For "detaching" the "Player" and "Effects" components, use the UnityEvent type. When the Player dies, it should call a method in the Effects component to play the audio clip only once.
+
+05. (30 points) Implement functionality to play a sound once when colliding with an obstacle.
+- Put the new logic in the "Effects" component.
+- Use the AudioEffectSource field of type AudioSource.
+- If the object that the Player collided with is a fuel barrel (Assets/Prefabs/Obstacles/Barrel.prefab), use the AudioClip from the "fuelGatherClip" field.
+- For any other collided object, use the AudioClip from the "SqueakySound" field.
+- (Bonus 5 points) For "detaching" the "ColliderDetector" and "Effects" components, use the FloatEvent type implemented in the script "Assets/Scripts/MainScene/CustomEvents.cs". When the "Player" component triggers an event update of the health, it should call a method in the Effects component to play the audio clip only once.
+
+06. (20 points) Implement functionality to display the Player's health as a texture in the top left corner of the screen.
+- Make the changes from the gameObject "Canvas/InGameUI/Health" inside the hierarchy.
+- Set the image "HUD_0" from the Sprite sheet "Assets/SourceFiles/Textures/HUD.png" as the background.
+- Set the image "HUD_1" from the Sprite sheet "Assets/SourceFiles/Textures/HUD.png" as the foreground image that you will "fill" with its content from the script "UI" attached to "Canvas" in the hierarchy. Use the "HealthFill" field.
