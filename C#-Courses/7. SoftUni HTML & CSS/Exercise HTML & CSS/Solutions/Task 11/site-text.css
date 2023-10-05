@@ -1,0 +1,21 @@
+#wrapper{
+    padding: 15px;
+    background-color: #f9f7cf;
+}
+
+.header-style{
+    padding: 15px;
+    background-color: #f2dcbb;
+    width: 480px;
+}
+
+.main-style{
+    padding: 5px;
+    width: 480px;
+}
+
+.footer-style{
+    padding: 15px;
+    background-color: #f2dcbb;
+    width: 480px;
+}
