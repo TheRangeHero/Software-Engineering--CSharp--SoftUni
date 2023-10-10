@@ -1,0 +1,62 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+}
+
+.section-headings{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul, ol, blockquote{
+    padding-left: 1.5em;
+}
+
+p, blockquote{
+    max-width: 60em;
+}
+
+blockquote{
+    border-left: 4px solid rgb(221, 221, 221);
+    margin-bottom: 1.5em;
+    font-style: italic ;
+    font-weight: normal;
+    color: #666;
+}
+
+blockquote p :last-child{
+    padding-bottom: 0;
+}
+
+blockquote p.author{
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60em;
+}
+
+thead {
+    background-color: rgb(210, 210, 210);
+}
+
+td, thead{
+    border: 1px solid gray;
+}
+
+td, th {
+    width: 33%;
+    padding-left: 1em;
+    text-align: left;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgb(230, 230, 230);
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: rgb(255, 255, 255)
+}
