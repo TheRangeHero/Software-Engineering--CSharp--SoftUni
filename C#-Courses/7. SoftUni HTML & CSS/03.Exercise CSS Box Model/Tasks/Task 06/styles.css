@@ -1,0 +1,67 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+p,ul,ol {
+    padding-bottom: 1.5em;
+}
+
+/* Layout */
+
+.site {
+    margin: 0 7em;
+    padding: 1em;
+}
+
+.site-header {
+    border-bottom: 2px solid #444;
+    position: relative;
+
+}
+
+.main-nav{
+    position: absolute;
+    bottom: -5px;
+    right: 70%;
+}
+
+.site-title {
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+.site-main{
+    margin: 1em 0;
+}
+
+section{
+    margin: 1em 0;
+}
+
+/* Navigation */
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 2em;
+}
+

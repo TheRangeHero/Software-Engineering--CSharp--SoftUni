@@ -1,0 +1,61 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+body{
+    font: inherit;
+    margin: 1em 5em;
+    background: rgb(238, 238, 238);
+    position: relative;
+}
+
+article, aside{
+    display: inline-block;
+    
+}
+
+.article-header{
+    margin-bottom: 1em
+}
+
+article{
+    width: 70%;
+}
+
+h2{
+    margin: 1em 0;
+}
+
+p{
+    margin: 1em 0;
+}
+
+aside{
+    position: absolute;
+    margin-left: 3em;
+    vertical-align: top;
+}
+
+
+.article-ul{
+    padding: 1.5em;
+}
+
+.img-div{
+   max-width: 700px; 
+}
