@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgb(238, 238, 238);
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    color: rgb(0, 154, 0);
+}
+
+img {
+    background: white;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75em;
+    margin: 4em auto;
+    gap: 4em;
+}
+
+.page>header {
+    border-bottom: 2px solid black;
+    flex: 1 1 100%;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.page>main {
+    flex: 1 0 65%;
+}
+
+.page>aside {
+    flex: 1 0 25%
+}
+
+img[class*="align"] {
+    display: block;
+    padding: 0.5em;
+    background: #fff;
+    border: 6px solid black;
+    box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.align-right {
+
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+.align-left{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+blockquote{
+border-left: 4px solid #ccc;
+padding-left: 1.5em;
+font-style: italic;
+}
+
+blockquote p:last-child{
+    padding-bottom: 0.5em;
+}
+
+blockquote p.author{
+    text-align: right;
+}
+
+blockquote p.author::before{
+    display: inline-block;
+}
+
+.quote{
+    display: flex;
+}
+
+.quote>p{
+    padding-right: 0.5em;
+    max-width: 55%;
+}

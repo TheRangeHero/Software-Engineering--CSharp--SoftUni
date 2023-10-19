@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #ddd;
+}
+
+main{
+    flex: 1 1 auto;
+}
+
+header, main, footer{
+    padding: 1.5em 2em;
+    border: 1px solid black;
+}
+
+footer{
+    background: #fff;
+}
+
+p{
+    font: 16px/1.5 Helvetica, sans-serif;
+    margin: 1.5em;
+}
