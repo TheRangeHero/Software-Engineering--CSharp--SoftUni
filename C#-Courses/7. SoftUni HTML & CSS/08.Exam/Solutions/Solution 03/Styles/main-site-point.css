@@ -1,0 +1,126 @@
+.site-content .site-main-point {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 8em;
+}
+
+.site-main-point{
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* You can adjust the justification as per your design */
+}
+
+.site-content {
+    flex: 1 1 30%;
+}
+
+.site-content .site-main-point h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.site-content .site-main-point p {
+    max-width: 100ch;
+    padding: 1.5em 0 1.5em 0;
+    opacity: 80%;
+}
+
+.site-content .site-main-point p a {
+    text-decoration: none;
+    color: #C7A68B;
+    border: 2px solid #C7A68B;
+    padding: 0.7em 1.5em;
+}
+
+
+/* ------Sponsors------ */
+.sponsors-media img {
+    max-width: 100px;
+    margin: 1em 2em;
+    background: black;
+    border-radius: 5em;
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+}
+
+.site-content .site-sponsors-partners {
+    display: flex;
+    align-items: center;
+}
+
+.sponsors-media {
+    display: flex;
+    justify-content: center;
+}
+
+.site-sponsors-partners .container article h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    color: #C7A68B;
+}
+
+.site-sponsors-partners .container article p {
+    text-align: center;
+    padding: 1em 1em;
+    max-width: 130ch;
+    opacity: 80%;
+}
+
+
+
+/* ----------Bottom---------- */
+
+
+
+.bottom-information
+{
+    border-bottom: 0.5px solid rgb(58, 58, 65);
+    padding: 2em 5em;
+}
+
+.bottom-information a,
+.bottom-information li {
+    display: block;
+}
+
+.bottom-information h4{
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: white;
+    padding: 1em 0em;
+    font-size: 1.5em;
+}
+
+.bottom-information a{
+    text-decoration: none;
+    color: #B6ADA2;
+    opacity: 70%;
+    padding: 0.5em 0em;
+}
+
+.section-site-footer{
+    color: white;
+    padding: 0em 5em;
+
+}
+
+.section-site-footer p{
+    opacity: 70%;
+}

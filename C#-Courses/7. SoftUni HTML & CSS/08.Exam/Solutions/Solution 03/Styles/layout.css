@@ -1,0 +1,54 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(../images/background.jpg);
+    background-size: 1300px;
+    background-position: center -20em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header .container{
+    max-width: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.site-sponsors-partners,
+.site-content{
+    background-color: white;
+}
+
+
+
+
+
+
+.site-content:first-child{
+    border-bottom: 20px solid blue;
+}
+
+.site-content .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-information .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-information,
+.section-site-footer {
+    background: #171720;
+}

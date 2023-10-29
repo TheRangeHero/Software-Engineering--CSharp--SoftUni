@@ -1,0 +1,44 @@
+.section-header img {
+    max-width: 5%;
+    margin: 1em 2em;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav a,
+.main-nav li {
+    display: block;
+}
+
+.main-nav a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* -------Banner----- */
+.section-hero-banner {
+    margin: 3em 0em;
+    padding: 0em 0em 3em 7em;
+}
+
+.section-hero-banner h1{
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-weight: normal;
+}
+
+.section-hero-banner p {
+    max-width: 65ch;
+    color: white;
+    margin-top: 1em;
+}
